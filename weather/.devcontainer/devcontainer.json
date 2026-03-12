@@ -1,0 +1,17 @@
+{
+  "name": "Weather CLI",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/app",
+  "runArgs": ["--security-opt", "label=disable"],
+  // Python and pylint extensions for PyCharm / VS Code compatibility
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}

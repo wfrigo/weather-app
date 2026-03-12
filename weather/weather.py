@@ -12,6 +12,7 @@ Example:
 import sys
 import api
 import display
+import plot
 
 
 def main():
@@ -39,6 +40,7 @@ def main():
     # Step 3: Display the results
     display.print_current(location, weather_data["current"])
     display.print_forecast(weather_data["daily"])
+    plot.plot_forecast(location, weather_data["daily"])
 
 
 if __name__ == "__main__":
